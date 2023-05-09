@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - by Noman Zahoor</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="/index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+            <div class="search">
+                <input id="locationInput" type="text" placeholder="Search place" name="location">
+                <button onclick="logLocation()"><img src="/images/004-search-interface-symbol.png" alt=""></button>
+            </div>
+                
+        <div class="main-card">
+            <div class="top">
+                <div class="group-img-text">
+                    <img src="/images/002-location-pin.png" alt="">
+                    <div id="city"></div>, &nbsp;
+                    <div id="country"></div>
+                </div>
+                <div id="time">15:00</div>
+            </div>
+            <div class="details">
+                <img id="weather-icon" src="" alt="">
+                <div class="group-img-text">
+                    <h2 id="temp"></h2>
+                    <h2>&#8451;</h2>
+                </div>
+
+                <div id="description">Stormy</div>
+            </div>
+            <div class="row">
+                <div class="group-img-text mr-10">
+                    <img src="/images/001-wind.png" alt="">
+                    <div id="speed"></div>&nbsp;Km/hr
+                </div>
+                <div class="group-img-text ml-10">
+                    <div id="max-temp"></div>&nbsp;&#8451;
+                    <img class="maxtemp" src="/images/003-down-arrow.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="group-img-text mr-10">
+                    <img src="/images/drop.png" alt="">
+                    <div id="humidity">46</div>&nbsp;%
+                </div>
+                <div class="group-img-text ml-10">
+                    <div id="min-temp"></div>&nbsp;&#8451;
+                    <img src="/images/003-down-arrow.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="group-img-text mr-10">
+                    <img src="/images/sun.png" alt="">
+                    <div id=""></div>&nbsp;h
+                </div>
+                <div class="group-img-text ml-10">
+                    <div id="pressure"></div>&nbsp;Pa
+                    <img src="/images/pressure-gauge.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="card-sun">
+            <div class="row">
+                <div class="group-img-text mr-10">
+                    <img src="/images/006-sunrise.png" alt="">
+                    <p>Sunrise:</p>
+                </div>
+                <p id="sunrise"></p>
+            </div>
+            <div class="row">
+                <div class="group-img-text mr-10">
+                    <img src="/images/002-sunset.png" alt="">
+                    <p>Sunset:</p>
+                </div>
+                <p id="sunset"></p>
+            </div>
+            <div class="row">
+                <div class="group-img-text mr-10">
+                    <img src="/images/007-water-level.png" alt="">
+                    <p>Sea level:</p>
+                </div>
+                <p id="sea-level"></p>
+            </div>
+        </div>
+
+        <div class="developer">
+            <div class="developer-card">
+                Designed and Developed by <a href="https://www.linkedin.com/in/zahoornoman0/">Noman Zahoor <img
+                        src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
